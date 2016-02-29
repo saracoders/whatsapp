@@ -1,0 +1,219 @@
+
+/*Inserta tu css aqui*/
+body {
+  background-color: #D7D7D7;
+}
+#whatsapp {
+  position: absolute;
+    z-index: -1;
+    background-color: #009688;
+    width: 100%;
+    height: 222px;
+    content: '';
+    top: 0;
+    left: 0;
+}
+.wrapper {
+    background-color: #EDEAE5;
+    height: 600px;
+    border-radius: 3px;
+    margin: 25px auto;
+    box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.44),0 7px 7px 0 rgba(0,0,0,.2);
+}
+
+
+img.foto-perfil {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+.perfil {
+  border: 1px #D3D3D3 solid;
+  background: #EEEEEE;
+  padding: 7px;
+}
+.icon {
+  font-size: 18px;
+  color: gray;
+  margin: 5px;
+}
+.perfil span {
+  margin: 0 7px;
+}
+.buscar {
+  padding: 10px;
+  background-color:#FFFFFF; 
+}
+.buscar span {
+  position: absolute;
+  top: 67px;
+  left: 15px;
+  font-size: 12px;
+}
+.buscar input {
+  border: 1px #EAE7E7 solid;
+  width: 100%;
+  padding: 5px 25px;
+  font-size: 10px;
+  border-radius: 5px;
+}
+.contactos {
+  height: 503px;
+}
+.scroll {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+  overflow-wrap: break-word;
+}
+*::-webkit-scrollbar {
+    width: 6px;
+}
+ 
+*::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+*::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+.contactos ul{
+  padding: 0;
+}
+.contactos li{
+  list-style-type: none;
+  padding: 15px;
+  border-top: 1px #E4E4E4 solid;
+  background: #FFFFFF;
+}
+.contactos li:hover{
+  background: #EEEEEE;
+}
+.contactos h5{
+  overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.foto-actual {
+  position: absolute;
+}
+.chat-actual {
+  display: inline-block;
+  margin-left: 40px;
+  width: 65%;
+}
+.contactos span{
+  position: absolute;
+  right: 12px;
+  font-size: 10px;
+}
+.chat-actual p{
+  font-size: 10px;
+    color: black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.dialog {
+  background-image: url(../image/chat-panel-bg.png);
+  width: 100%;
+  height: 500px;
+  padding: 20px; 
+}
+
+.chat-text{
+  display: inline-block;
+  width: 80%;
+}
+.icon-chat {
+  font-size: 25px;
+  color: gray;
+  margin: 1%;
+}
+.chat-text input{
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+}
+.chat span {
+  margin: 0 5%;
+}
+.dialog li {
+  list-style-type: none;
+  display: block;
+  margin: 2px 0;
+  font-size:12px; 
+}
+.dialog li span {
+  float: right;
+}
+.dialog-left{
+  border-radius: 5px;
+  float: left;
+  width: 50%;
+  background-color: white;
+  padding: 10px 5px 3px 10px; 
+}
+.dialog-right{
+  border-radius: 5px;
+  float: right;
+  background-color: #DCF7C5;
+  padding: 10px 5px 3px 10px;
+}
+.cl-celeste {
+  color: #8BBBCF;
+}
+.cl-morado {
+  color: #9E6586;
+} 
+.cl-verde {
+  color: #7EBBAB;
+}
+.cl-marron {
+  color:#A25E14;
+}
+
+@media (max-width: 768px) {
+  .contactos {
+  height: 120px !important;
+  }
+  .dialog {
+  height: 300px !important;
+  }
+  .container-fluid {
+    width: 90%;
+  }
+}
+@media (min-width: 992px) {
+  .container-fluid {
+    width: 80%;
+  }
+}
+@media (min-width: 1200px) {
+  .container-fluid {
+    width: 80% ;
+  }
+}
+
+
+/*Utilities*/
+.clearfix:after {
+  content: " ";
+  clear:both;
+  display: block;
+}
+.p-0 {
+  padding: 0;
+} 
+.m-0 {
+  margin: 0;
+}
+.right{
+  float: right;
+}
+.left{
+  float: left;
+}
